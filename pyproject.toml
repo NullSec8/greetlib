@@ -4,10 +4,10 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "greetlib"
-version = "0.1.0"
-description = "A simple greeting library — demo for GitHub Packages"
+version = "0.2.0"
+description = "Greet people in style — colors, languages, pirate mode, and more!"
 authors = [
-    { name = "Your Name", email = "you@example.com" },
+    { name = "NullSec8", email = "nullsec8@users.noreply.github.com" },
 ]
 license = { text = "MIT" }
 readme = "README.md"
@@ -15,6 +15,9 @@ requires-python = ">=3.8"
 classifiers = [
     "Programming Language :: Python :: 3",
 ]
+
+[project.scripts]
+greetlib = "greetlib.cli:main"
 
 [tool.setuptools.packages.find]
 include = ["greetlib*"]

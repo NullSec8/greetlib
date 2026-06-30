@@ -1,7 +1,14 @@
 """Consume greetlib from GitHub Packages."""
 
-from greetlib import greet, greet_many
+from greetlib import greet, greet_random, greet_many, print_banner, LANGUAGES
 
-print(greet("Alice"))
-print(greet("Bob", "Howdy"))
-print(greet_many(["X", "Y", "Z"], greeting="Yo"))
+print_banner()
+print(greet("Alice", style="pirate", color="red"))
+print(greet("Bob", lang="spanish"))
+print(greet("Charlie", style="doge", color="yellow"))
+print(greet_random("Diana"))
+print()
+
+print("All languages:")
+for lang in LANGUAGES:
+    print(f"  {greet('World', lang=lang)}")
