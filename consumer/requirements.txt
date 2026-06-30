@@ -1,0 +1,2 @@
+--extra-index-url https://pypi.pkg.github.com/YOUR_GITHUB_USERNAME/simple/
+greetlib
